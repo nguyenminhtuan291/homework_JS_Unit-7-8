@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container ">
+      <div class="row">
+          <div class="col-8">
+              <div class="card">
+                  <div class="card-header">
+                      <h2>Bài tập JS buổi 7-8</h2>
+                      <div class="form-group">
+                          <input type="number" class="form-control w-50" id="nhapSoN" placeholder="Nhập số n">
+                          <button class="btn btn-info mt-3" id="btnNhapSo">Thêm số</button>
+                      </div>
+                      <div id="ShowThemSo" class="bg-success text-white p-3">
+                          Mảng input
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <div>
+                          <h4>1. Tổng số dương</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnTinhTong">Tính tổng</button>
+                              <div id="showTongSoDuong" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>2. Đếm số dương</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnDemSoDuong">Đếm số</button>
+                              <div id="showDemSoDuong" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>3. Tìm số nhỏ nhất</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnTimSoNho">Tìm số nhỏ nhất</button>
+                              <div id="showTimSoNho" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>4. Tìm số dương nhỏ nhất</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnTimDuongNho">Tìm số dương nhỏ nhất</button>
+                              <div id="showTimDuongNho" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>5. Tìm số chẵn cuối cùng</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnTimSoChan">Tìm số Chãn cuối cùng</button>
+                              <div id="showTimSochan" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>6. Đổi chỗ</h4>
+                          <div>
+                              <input type="text" class="form-control w-50" id="nhapSoLocation1"
+                                  placeholder="Nhập số vị trí 1">
+                              <input type="text" class="form-control w-50 mt-3" id="nhapSoLocation2"
+                                  placeholder="Nhập số vị trí 2">
+                              <button class="btn btn-primary mt-3" id="btnDoiCho">Đổi chỗ</button>
+                              <div id="showDoiCho" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>7. Sắp xếp tăng dần</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnSortTang">Sắp xếp</button>
+                              <div id="showSortTang" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>8. Tìm số nguyên tố đầu tiên</h4>
+                          <div>
+                              <button class="btn btn-primary" id="btnSNTfirst">Tìm số nguyên tố</button>
+                              <div id="showSNTfirst" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>9. Đếm số nguyên</h4>
+                          <div class="d-flex align-item">
+                              <input type="number" class="form-control w-50" id="nhapSoB9" placeholder="Nhập số ">
+                              <button class="btn btn-primary ml-3" id="btnInput9">Nhập số</button>
+                          </div>
+                          <div id="showArrB9" class="bg-success text-white mt-3 p-2">
+                              Mảng input bài 9 
+                          </div>
+                          <div>
+                              <button class="btn btn-primary mt-3" id="btnDemSoNguyen">Đếm số nguyên</button>
+                              <div id="showDemSoNguyen" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+                      <hr />
+                      <div>
+                          <h4>10. So sánh số lượng âm và dương</h4>
+                          <div>
+                              <button class="btn btn-primary mt-3" id="btnSoSanh">So sánh</button>
+                              <div id="showSoSanh" class=" m-3 p-2">
+                                  Kết quả là :
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="card-footer text-muted">
+                      Footer
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="./index.js"></script>
+  </body>
+</html>
